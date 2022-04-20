@@ -9,7 +9,8 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
  */
 @Configuration
 @ComponentScan(basePackages = {"com.bhaskarmantrala.hub.springbootaop.core",
-        "com.bhaskarmantrala.hub.springbootaop.advice"})
+        "com.bhaskarmantrala.hub.springbootaop.advice",
+        "com.bhaskarmantrala.hub.springbootaop.helper"})
 @EnableAspectJAutoProxy
 public class Config {
 }

@@ -1,6 +1,8 @@
 package com.bhaskarmantrala.hub.springbootaop.core;
 
+import com.bhaskarmantrala.hub.springbootaop.helper.ApiHitCounter;
 import lombok.extern.log4j.Log4j2;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
@@ -11,7 +13,10 @@ import org.springframework.stereotype.Component;
 public class TestClass {
 
     public void invokeMethod() {
-        log.info("invokeMethod is called");
+    }
+
+    public String invokeMethodWithParams(String name) {
+        return name;
     }
 
 }
